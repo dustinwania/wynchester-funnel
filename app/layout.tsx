@@ -1,6 +1,19 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
+
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu"
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,11 +37,41 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <header className="w-full flex items-center justify-between px-8 py-4">
+          <Link href="/" className="font-bold text-lg">
+            Wynchester
+          </Link>
+
+          {/* Right-aligned nav buttons */}
+          <nav className="flex gap-6">
+            {[
+              { href: "/about", label: "About Us" },
+              { href: "/services", label: "Services" },
+              { href: "/products", label: "Products" },
+              { href: "/faqs", label: "FAQs" },
+              { href: "/testimonials", label: "Testimonials" },
+              { href: "/apply", label: "Apply Now" },
+              { href: "/contact", label: "Contact Us" },
+              { href: "/quote", label: "Get a Quote Today" },
+            ].map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className="text-sm font-medium hover:text-primary transition-colors"
+              >
+                {label}
+              </Link>
+            ))}
+          </nav>
+
+          <nav>
+            <Link href="">Facebook</Link>
+          </nav>
+        </header>
         {children}
       </body>
     </html>
   );
 }
+
