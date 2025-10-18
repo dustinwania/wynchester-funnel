@@ -1,6 +1,6 @@
 import AvatarCard from "../components/AvatarCard"
 
-export default function About() {
+export default function AboutPage() {
     return(
         <div className="px-8 py-4">
             <p className="font-bold text-5xl mb-6">About Us</p>
