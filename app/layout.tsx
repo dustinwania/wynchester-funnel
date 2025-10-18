@@ -47,7 +47,6 @@ export default function RootLayout({
           <nav className="flex gap-6">
             {[
               { href: "/about", label: "About Us" },
-              { href: "/services", label: "Services" },
               { href: "/products", label: "Products" },
               { href: "/faqs", label: "FAQs" },
               { href: "/testimonials", label: "Testimonials" },
