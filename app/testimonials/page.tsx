@@ -2,12 +2,19 @@ import Testimonial02 from "@/components/testimonial-02/testimonial-02"
 
 export default function TestimonialsPage() {
     return(
-            <div className="px-16 py-4">
-                <p className="text-center font-bold text-5xl mt-8 mb-16">Client's Testimonials</p>
-    
+        <div className="bg-white">
+            {/* Header Section */}
+            <div className="bg-[#1e40af] text-white py-16 px-8">
+                <h1 className="font-bold text-5xl mb-4">Client's Testimonials</h1>
+                <p className="text-xl max-w-3xl">Hear what our satisfied customers have to say about their experience.</p>
+            </div>
+
+            {/* Testimonials Section */}
+            <div className="px-8 py-16">
                 <section>
-                    <Testimonial02></Testimonial02>       
+                    <Testimonial02 />
                 </section>
             </div>
-        )
+        </div>
+    )
 }

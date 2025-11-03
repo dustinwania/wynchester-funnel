@@ -17,7 +17,7 @@ const Contact02Page = () => (
       <div className="mt-16 grid lg:grid-cols-2 gap-16 md:gap-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12">
           <div>
-            <div className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
+            <div className="h-12 w-12 flex items-center justify-center bg-[#1e40af]/10 text-[#1e40af] rounded-full">
               <MailIcon />
             </div>
             <h3 className="mt-6 font-semibold text-xl">Email</h3>
@@ -25,26 +25,26 @@ const Contact02Page = () => (
               Our friendly team is here to help.
             </p>
             <Link
-              className="font-medium text-primary"
+              className="font-medium text-[#1e40af]"
               href="mailto:akashmoradiya3444@gmail.com"
             >
               akashmoradiya3444@gmail.com
             </Link>
           </div>
           <div>
-            <div className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
+            <div className="h-12 w-12 flex items-center justify-center bg-[#1e40af]/10 text-[#1e40af] rounded-full">
               <MessageCircle />
             </div>
             <h3 className="mt-6 font-semibold text-xl">Live chat</h3>
             <p className="my-2.5 text-muted-foreground">
               Our friendly team is here to help.
             </p>
-            <Link className="font-medium text-primary" href="#">
+            <Link className="font-medium text-[#1e40af]" href="#">
               Start new chat
             </Link>
           </div>
           <div>
-            <div className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
+            <div className="h-12 w-12 flex items-center justify-center bg-[#1e40af]/10 text-[#1e40af] rounded-full">
               <MapPinIcon />
             </div>
             <h3 className="mt-6 font-semibold text-xl">Office</h3>
@@ -52,7 +52,7 @@ const Contact02Page = () => (
               Come say hello at our office HQ.
             </p>
             <Link
-              className="font-medium text-primary"
+              className="font-medium text-[#1e40af]"
               href="https://map.google.com"
               target="_blank"
             >
@@ -60,7 +60,7 @@ const Contact02Page = () => (
             </Link>
           </div>
           <div>
-            <div className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
+            <div className="h-12 w-12 flex items-center justify-center bg-[#1e40af]/10 text-[#1e40af] rounded-full">
               <PhoneIcon />
             </div>
             <h3 className="mt-6 font-semibold text-xl">Phone</h3>
@@ -68,7 +68,7 @@ const Contact02Page = () => (
               Mon-Fri from 8am to 5pm.
             </p>
             <Link
-              className="font-medium text-primary"
+              className="font-medium text-[#1e40af]"
               href="tel:akashmoradiya3444@gmail.com"
             >
               +1 (555) 000-0000
@@ -77,7 +77,7 @@ const Contact02Page = () => (
         </div>
 
         {/* Form */}
-        <Card className="bg-accent shadow-none py-0">
+        <Card className="bg-[#e6effe] shadow-none py-0">
           <CardContent className="p-6 md:p-8">
             <form>
               <div className="grid md:grid-cols-2 gap-x-8 gap-y-6">
@@ -126,7 +126,7 @@ const Contact02Page = () => (
                   </Label>
                 </div>
               </div>
-              <Button className="mt-6 w-full" size="lg">
+              <Button className="mt-6 w-full bg-[#1e40af] hover:bg-[#1e3a8a] text-white" size="lg">
                 Submit
               </Button>
             </form>
