@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function AboutPage() {
     return(
@@ -25,31 +26,22 @@ export default function AboutPage() {
                         </Button>
                     </div>
 
-                    <div className="w-full lg:w-[45%] h-[50vh] bg-[#e6effe] border-2 border-[#1e40af] rounded-lg flex items-center justify-center shadow-lg">
-                        <div className="text-center p-6">
-                            <h3 className="text-2xl font-bold text-[#1e40af] mb-4">Visit Our Office</h3>
-                            <p className="text-gray-700 mb-2">123 Finance Street, Suite 100</p>
-                            <p className="text-gray-700 mb-2">Carville, CA 90210</p>
-                            <p className="text-gray-700 mb-4">(555) 123-4567</p>
-                            <p className="text-[#1e40af] font-medium">Google Map 2D Location here</p>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Team Section */}
-                <section className="w-full mb-16">
-                    <h2 className="text-3xl font-bold text-[#1e40af] mb-8 text-center">Our Team</h2>
-                    <div className="flex flex-wrap justify-center gap-8">
-                        {[1, 2, 3].map((i) => (
-                            <div key={i} className="w-64 text-center">
-                                <div className="w-32 h-32 rounded-full bg-[#1e40af] mx-auto mb-4"></div>
-                                <h3 className="text-xl font-bold text-[#1e40af]">Team Member {i}</h3>
-                                <p className="text-gray-700">Position</p>
+                    <div className="w-full lg:w-[45%] h-[50vh] border-2 border-[#1e40af] rounded-lg shadow-lg relative group overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.3824966449597!2d121.05488107472618!3d14.634215985856109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b798966274c7%3A0x991e384a5c73a96b!2sWLC%20Car%20Loan!5e0!3m2!1sen!2sph!4v1762253472857!5m2!1sen!2sph" width="100%" height="100%" style={{ border: '0' }} allowFullScreen="True" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="absolute inset-0 w-full h-full"></iframe>
+                        <div className="absolute inset-0 flex items-center justify-center bg-white/90 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                            <div className="text-center p-6">
+                                <h3 className="text-2xl font-bold text-[#1e40af] mb-4">Visit Our Office</h3>
+                                <p className="text-gray-700 mb-2">4th Flr. Room 407, Wil-Vic Bldg, 125 Kamias Rd</p>
+                                <p className="text-gray-700 mb-2">Diliman, Quezon City, Metro Manila</p>
+                                <p className="text-gray-700 mb-4">(02) 34364574</p>
+                                <Button asChild className="bg-[#1e40af] hover:bg-[#1e3a8a] text-white mt-4">
+                                    <Link href="https://maps.app.goo.gl/zkvbDnAXnVF4aGZw8" target="_blank">Get Directions</Link>
+                                </Button>
                             </div>
-                        ))}
+                        </div>
                     </div>
                 </section>
             </div>
         </div>
-    )
+    ) 
 }
