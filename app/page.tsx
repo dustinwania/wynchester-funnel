@@ -9,8 +9,9 @@ export default function Home() {
             <div className="relative">
                 <ImageCarousel/>
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-white bg-[#1e40af] bg-opacity-60 z-10">
-                    <h1 className="text-5xl font-bold mb-4">Drive Your Dreams</h1>
-                    <p className="text-xl mb-6">Fast approvals. Competitive rates. Flexible terms.</p>
+                    <h1 className="text-8xl font-bold mt-12 mb-12">Need Emergency Funds?</h1>
+                    <h2 className="text-4xl font-bold mb-4">Sangla Kotse with Original ORCR!</h2>
+                    <p className="text-xl mb-6 italic">Dito kay WLC - Mabilis. Madali. Maaasahan.</p>
                     <Button className="bg-white hover:bg-gray-100 text-[#1e40af] px-8 py-6 text-lg font-bold rounded-md border-2 border-white">
                         Apply Now
                     </Button>
@@ -20,18 +21,18 @@ export default function Home() {
             {/* Features Section */}
             <section className="w-full py-16 px-12 flex flex-col md:flex-row justify-between items-center bg-[#1e40af] text-white">
                 <div className="text-center md:text-left mb-6 md:mb-0">
-                    <h2 className="text-3xl font-bold mb-2">Quick Approvals</h2>
-                    <p className="text-lg opacity-90">Get approved in as little as 24 hours</p>
+                    <h2 className="text-3xl font-bold mb-2 text-center">Fast Approval</h2>
+                    <p className="text-lg opacity-90 text-center">Get approved in just 2 hours!</p>
                 </div>
 
                 <div className="text-center md:text-left mb-6 md:mb-0">
-                    <h2 className="text-3xl font-bold mb-2">Low Rates</h2>
-                    <p className="text-lg opacity-90">Competitive interest rates for all credit types</p>
+                    <h2 className="text-3xl font-bold mb-2 text-center">Generous Interest Rates</h2>
+                    <p className="text-lg opacity-90 text-center">Competitive interest rates for all credit types</p>
                 </div>
                 
                 <div className="text-center md:text-left">
-                    <h2 className="text-3xl font-bold mb-2">100% Online</h2>
-                    <p className="text-lg opacity-90">Complete the entire process from your device</p>
+                    <h2 className="text-3xl font-bold mb-2 text-center">Secured and Reliable</h2>
+                    <p className="text-lg opacity-90 text-center">Complete the entire process from your device</p>
                 </div>
             </section>
             

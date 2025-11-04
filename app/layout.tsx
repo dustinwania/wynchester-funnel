@@ -31,7 +31,7 @@ export default function RootLayout({
         <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-sm">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
             <Link href="/" className="font-bold text-lg text-[#1e40af]">
-              Wynchester
+              WLC Car Loans
             </Link>
 
             <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
@@ -54,7 +54,7 @@ export default function RootLayout({
 
             <div className="hidden md:flex items-center gap-4">
               <Button asChild className="bg-[#1e40af] hover:bg-[#1e3a8a]">
-                <Link href="/quote">Get a Quote</Link>
+                <Link href="/quote">Get a Quote✅</Link>
               </Button>
             </div>
             
@@ -74,8 +74,8 @@ export default function RootLayout({
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Company Info */}
               <div>
-                <h3 className="text-lg font-semibold mb-4">Wynchester</h3>
-                <p className="text-sm text-gray-200 mb-2">Your trusted partner in auto financing solutions.</p>
+                <h3 className="text-lg font-semibold mb-4">WLC Car Loans</h3>
+                <p className="text-sm text-gray-200 mb-2">Fast, Easy, Reliable Loans—Anytime!</p>
                 <Button asChild variant="secondary" size="sm" className="mt-2">
                   <Link href="/quote">Get Started Today</Link>
                 </Button>
@@ -85,10 +85,10 @@ export default function RootLayout({
               <div>
                 <h3 className="text-lg font-semibold mb-4">Visit Us</h3>
                 <address className="text-sm text-gray-200 not-italic">
-                  <p>123 Finance Street</p>
-                  <p>Suite 100</p>
-                  <p>Carville, CA 90210</p>
-                  <p className="mt-2">United States</p>
+                  <p>4th Flr. Room 407, Wil-Vic Bldg</p>
+                  <p>125 Kamias Rd</p>
+                  <p>Quezon City, Metro Manila</p>
+                  <p className="mt-2">Philippines</p>
                 </address>
               </div>
 
@@ -142,7 +142,7 @@ export default function RootLayout({
 
             {/* Copyright */}
             <div className="mt-8 pt-8 border-t border-gray-200/20 text-center text-sm text-gray-200">
-              <p>&copy; {new Date().getFullYear()} Wynchester. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} WLC Car Loans. All rights reserved.</p>
             </div>
           </div>
         </footer>

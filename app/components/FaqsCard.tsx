@@ -14,48 +14,54 @@ export function AccordionCard() {
       defaultValue="item-1"
     >
       <AccordionItem value="item-1">
-        <AccordionTrigger>Product Information</AccordionTrigger>
+        <AccordionTrigger>What kind of vehicles do you accept?</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance">
           <p>
-            Our flagship product combines cutting-edge technology with sleek
-            design. Built with premium materials, it offers unparalleled
-            performance and reliability.
-          </p>
-          <p>
-            Key features include advanced processing capabilities, and an
-            intuitive user interface designed for both beginners and experts.
+            We accept all types of vehicles, including cars, motorcycles, and
+            trucks.
           </p>
         </AccordionContent>
       </AccordionItem>
+      
       <AccordionItem value="item-2">
-        <AccordionTrigger>Shipping Details</AccordionTrigger>
+        <AccordionTrigger>How long does it take to process my loan and release the cash?</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance">
           <p>
-            We offer worldwide shipping through trusted courier partners.
-            Standard delivery takes 3-5 business days, while express shipping
-            ensures delivery within 1-2 business days.
-          </p>
-          <p>
-            All orders are carefully packaged and fully insured. Track your
-            shipment in real-time through our dedicated tracking portal.
+            We offer a fast and efficient loan processing system. On average,
+            it takes 3 hours to process a loan and release the cash.
           </p>
         </AccordionContent>
       </AccordionItem>
+
       <AccordionItem value="item-3">
-        <AccordionTrigger>Return Policy</AccordionTrigger>
+        <AccordionTrigger>What if the OR/CR of my car is not yet under my name (the vehicle was sold to me)?</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance">
           <p>
-            We stand behind our products with a comprehensive 30-day return
-            policy. If you&apos;re not completely satisfied, simply return the
-            item in its original condition.
-          </p>
-          <p>
-            Our hassle-free return process includes free return shipping and
-            full refunds processed within 48 hours of receiving the returned
-            item.
+            Just present the original OR/CR of the vehicle together with the notarized deed of sale, and valid ID of the original owner.
           </p>
         </AccordionContent>
       </AccordionItem>
+
+      <AccordionItem value="item-4">
+        <AccordionTrigger>What if the OR/CR of my car is not yet under my name (the vehicle was sold to me)?</AccordionTrigger>
+        <AccordionContent className="flex flex-col gap-4 text-balance">
+          <p>
+            Just present the original OR/CR of the vehicle together with the notarized deed of sale, and valid ID of the original owner.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
+
+      <AccordionItem value="item-5">
+        <AccordionTrigger>What if my vehicle has an existing loan from a bank or is under private financing?</AccordionTrigger>
+        <AccordionContent className="flex flex-col gap-4 text-balance">
+          <p>
+            We pay off the balance with at least 20% remaining balance from the bank.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
+
+
+
     </Accordion>
   )
 }
