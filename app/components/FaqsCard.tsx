@@ -43,15 +43,6 @@ export function AccordionCard() {
       </AccordionItem>
 
       <AccordionItem value="item-4">
-        <AccordionTrigger>What if the OR/CR of my car is not yet under my name (the vehicle was sold to me)?</AccordionTrigger>
-        <AccordionContent className="flex flex-col gap-4 text-balance">
-          <p>
-            Just present the original OR/CR of the vehicle together with the notarized deed of sale, and valid ID of the original owner.
-          </p>
-        </AccordionContent>
-      </AccordionItem>
-
-      <AccordionItem value="item-5">
         <AccordionTrigger>What if my vehicle has an existing loan from a bank or is under private financing?</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance">
           <p>
