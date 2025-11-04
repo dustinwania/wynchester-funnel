@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Wynchester",
-  description: "Drive Your Dreams with Wynchester Auto Financing",
+  title: "WLC Car Loans",
+  description: "Sangla Kotse with ORCR",
 };
 
 export default function RootLayout({
