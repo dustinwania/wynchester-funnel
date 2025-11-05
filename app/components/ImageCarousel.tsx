@@ -1,6 +1,6 @@
 "use client";
+import Image from 'next/image';
 
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -50,10 +50,12 @@ export default function ImageCarousel() {
         {carImages.map((image, index) => (
           <CarouselItem key={index} className="basis-full">
             <div className="h-[70vh] w-full relative overflow-hidden">
-              <img 
-                src={image.url} 
+              <Image 
+                src={image.url}
                 alt={image.alt}
                 className="w-full h-full object-cover"
+                width={1470}
+                height={700}
               />
             </div>
           </CarouselItem>
