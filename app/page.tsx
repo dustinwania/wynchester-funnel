@@ -73,7 +73,7 @@ export default function Home() {
                     <div className="lg:w-1/2 text-center lg:text-left">
                         <h2 className="text-4xl font-bold text-[#1e40af] mb-6">Why Choose Us?</h2>
                         <p className="text-lg text-gray-700 mb-6">
-                            At Wynchester, we understand that securing a car loan can be a complex process. That's why we strive to make it as simple, fast, and transparent as possible. With competitive rates, flexible terms, and a dedicated team, we're here to help you drive away in your dream car with confidence.
+                            At Wynchester, we understand that securing a car loan can be a complex process. That&apos;s why we strive to make it as simple, fast, and transparent as possible. With competitive rates, flexible terms, and a dedicated team, we&apos;re here to help you drive away in your dream car with confidence.
                         </p>
                         <p className="text-lg text-gray-700">
                             Our commitment to customer satisfaction and our streamlined application process set us apart. Experience the difference with Wynchester – where your automotive dreams become a reality.
