@@ -26,9 +26,9 @@ const Contact02Page = () => (
             </p>
             <Link
               className="font-medium text-[#1e40af]"
-              href="mailto:akashmoradiya3444@gmail.com"
+              href="mailto:wlccarloans@gmail.com"
             >
-              akashmoradiya3444@gmail.com
+              wlccarloans@gmail.com
             </Link>
           </div>
           <div>
@@ -39,7 +39,7 @@ const Contact02Page = () => (
             <p className="my-2.5 text-muted-foreground">
               Our friendly team is here to help.
             </p>
-            <Link className="font-medium text-[#1e40af]" href="#">
+            <Link className="font-medium text-[#1e40af]" href="https://www.facebook.com/carloanWLC">
               Start new chat
             </Link>
           </div>
@@ -56,7 +56,7 @@ const Contact02Page = () => (
               href="https://map.google.com"
               target="_blank"
             >
-              100 Smith Street Collingwood <br /> VIC 3066 AU
+              4th Flr. Room 407, Wil-Vic Bldg <br /> 125 Kamias Rd <br /> Quezon City, Metro Manila
             </Link>
           </div>
           <div>
@@ -65,13 +65,13 @@ const Contact02Page = () => (
             </div>
             <h3 className="mt-6 font-semibold text-xl">Phone</h3>
             <p className="my-2.5 text-muted-foreground">
-              Mon-Fri from 8am to 5pm.
+              Monday - Friday: 9:00 AM - 6:00 PM
             </p>
             <Link
               className="font-medium text-[#1e40af]"
               href="tel:akashmoradiya3444@gmail.com"
             >
-              +1 (555) 000-0000
+              (555) 123-4567
             </Link>
           </div>
         </div>
@@ -107,10 +107,10 @@ const Contact02Page = () => (
                   />
                 </div>
                 <div className="col-span-2">
-                  <Label htmlFor="message">Message</Label>
+                  <Label htmlFor="message">Vehicle Unit Details</Label>
                   <Textarea
                     id="message"
-                    placeholder="Message"
+                    placeholder="Please provide your Unit's make, model, and year."
                     className="mt-2 bg-white shadow-none"
                     rows={6}
                   />

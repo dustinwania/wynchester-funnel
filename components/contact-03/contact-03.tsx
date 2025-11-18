@@ -17,41 +17,30 @@ const Contact03Page = () => (
           </div>
           <h3 className="mt-8 font-bold text-xl">Email</h3>
           <p className="mt-2.5 mb-4 text-muted-foreground">
-            Our friendly team is here to help.
+            Our team is ready to help!
           </p>
           <Link
             className="font-medium"
-            href="mailto:akashmoradiya3444@gmail.com"
+            href="mailto:wlccarloans@gmail.com"
           >
-            akashmoradiya3444@gmail.com
+            wlccarloans@gmail.com
           </Link>
         </div>
-        <div className="border border-dashed bg-primary/1 p-6 pb-10 rounded-lg">
-          <div className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
-            <MessageCircle />
-          </div>
-          <h3 className="mt-8 font-bold text-xl">Live chat</h3>
-          <p className="mt-2.5 mb-4 text-muted-foreground">
-            Our friendly team is here to help.
-          </p>
-          <Link className="font-medium" href="#">
-            Start new chat
-          </Link>
-        </div>
+
         <div className="border border-dashed bg-primary/1 p-6 pb-10 rounded-lg">
           <div className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
             <MapPinIcon />
           </div>
           <h3 className="mt-8 font-bold text-xl">Office</h3>
           <p className="mt-2.5 mb-4 text-muted-foreground">
-            Come say hello at our office HQ.
+            Come say hello at our office.
           </p>
           <Link
             className="font-medium"
             href="https://map.google.com"
             target="_blank"
           >
-            100 Smith Street Collingwood <br /> VIC 3066 AU
+            4th Flr. Room 407, Wil-Vic Bldg <br /> 125 Kamias Rd <br /> Quezon City, Metro Manila
           </Link>
         </div>
         <div className="border border-dashed bg-primary/1 p-6 pb-10 rounded-lg">
@@ -60,10 +49,10 @@ const Contact03Page = () => (
           </div>
           <h3 className="mt-8 font-bold text-xl">Phone</h3>
           <p className="mt-2.5 mb-4 text-muted-foreground">
-            Mon-Fri from 8am to 5pm.
+            Monday - Friday: 9:00 AM - 6:00 PM
           </p>
           <Link className="font-medium" href="tel:akashmoradiya3444@gmail.com">
-            +1 (555) 000-0000
+            (555) 123-4567
           </Link>
         </div>
       </div>

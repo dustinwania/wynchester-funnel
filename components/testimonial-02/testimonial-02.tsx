@@ -68,12 +68,12 @@ const Testimonial02 = () => (
         {testimonials.map((testimonial) => (
           <div
             key={testimonial.id}
-            className="mb-8 rounded-xl p-6 break-inside-avoid shadow-[0px_0px_16px_0px_rgba(0,0,0,0.1)]"
+            className="mb-8 rounded-xl p-6 break-inside-avoid shadow-[0px_0px_16px_0px_rgba(0,0,0,0.1)] bg-blue-100 text-gray-800"
           >
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
                 <Avatar>
-                  <AvatarFallback className="text-xl font-medium bg-primary text-primary-foreground">
+                  <AvatarFallback className="text-xl font-medium bg-[#1e40af] text-white">
                     {testimonial.name.charAt(0)}
                   </AvatarFallback>
                 </Avatar>
@@ -86,7 +86,7 @@ const Testimonial02 = () => (
               </div>
               <Button variant="ghost" size="icon" asChild>
                 <Link href="#" target="_blank">
-                  <TwitterLogo className="w-4 h-4" />
+                  <StarLogo className="w-4 h-4" />
                 </Link>
               </Button>
             </div>
@@ -98,18 +98,20 @@ const Testimonial02 = () => (
   </div>
 );
 
-const TwitterLogo = (props: ComponentProps<"svg">) => (
+const StarLogo = (props: ComponentProps<"svg">) => (
   <svg
-    role="img"
-    viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     {...props}
   >
-    <title>X</title>
-    <path
-      fill="currentColor"
-      d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
-    />
+    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
   </svg>
 );
 

@@ -1,6 +1,8 @@
 import { AccordionCard } from "../components/FaqsCard"
 import { Button } from "@/components/ui/button"
 
+import Link from "next/link"
+
 export default function FAQsPage() {
     return(
         <div className="bg-white">
@@ -16,7 +18,7 @@ export default function FAQsPage() {
                 <div className="mt-12 text-center">
                     <p className="text-lg mb-4 text-gray-700">Still have questions?</p>
                     <Button className="bg-[#1e40af] hover:bg-[#1e3a8a] text-white px-6 py-2 text-lg rounded-md">
-                        Contact Us
+                        <Link href="/contact">Contact Us</Link>
                     </Button>
                 </div>
             </section>

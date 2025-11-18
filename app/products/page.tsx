@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link";
 
 export default function ProductsPage() {
     return (
@@ -56,7 +57,7 @@ export default function ProductsPage() {
 
                 <div className="text-center mt-8">
                     <Button className="bg-[#1e40af] hover:bg-[#1e3a8a] text-white px-8 py-6 text-lg rounded-md">
-                        Apply For Financing
+                        <Link href="/quote">Apply For Financing</Link>
                     </Button>
                 </div>
             </section>
