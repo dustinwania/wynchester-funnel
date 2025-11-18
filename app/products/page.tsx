@@ -15,7 +15,6 @@ export default function ProductsPage() {
                         <div className="w-full h-64 bg-[#1e40af] text-white flex items-center justify-center">
                             <div className="text-center p-6">
                                 <h3 className="text-2xl font-bold mb-2">New Car Loans</h3>
-                                <p className="text-lg">Starting at 3.99% APR</p>
                             </div>
                         </div>
                         <div className="p-6">
@@ -30,7 +29,6 @@ export default function ProductsPage() {
                         <div className="w-full h-64 bg-[#1e40af] text-white flex items-center justify-center">
                             <div className="text-center p-6">
                                 <h3 className="text-2xl font-bold mb-2">Used Car Loans</h3>
-                                <p className="text-lg">Starting at 4.49% APR</p>
                             </div>
                         </div>
                         <div className="p-6">
@@ -45,7 +43,6 @@ export default function ProductsPage() {
                         <div className="w-full h-64 bg-[#1e40af] text-white flex items-center justify-center">
                             <div className="text-center p-6">
                                 <h3 className="text-2xl font-bold mb-2">Refinancing</h3>
-                                <p className="text-lg">Save with better rates</p>
                             </div>
                         </div>
                         <div className="p-6">

@@ -12,7 +12,7 @@ export default function Home() {
             {/* Hero Section with Carousel */}
             <div className="relative">
                 <ImageCarousel/>
-                <div className="absolute inset-0 flex flex-col justify-center items-center text-white bg-[#1e40af] bg-opacity-60 z-10">
+                <div className="absolute inset-0 flex flex-col justify-center items-center text-white bg-[#1e40af] z-10">
                     <h1 className="text-8xl font-bold mt-12 mb-12">Need Emergency Funds?</h1>
                     <h2 className="text-4xl font-bold mb-4">Sangla Kotse with Original ORCR!</h2>
                     <p className="text-xl mb-6 italic">Dito kay WLC - Mabilis. Madali. Maaasahan.</p>

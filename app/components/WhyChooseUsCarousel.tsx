@@ -1,10 +1,10 @@
 "use client";
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const carouselItems = [
   {
-    url: "/images/construction-needs.jpg",
+    url: "/images/construction-needs.png",
     alt: "Construction Needs",
     text: "For Construction Needs",
   },
@@ -14,7 +14,7 @@ const carouselItems = [
     text: "For Business Capital Needs",
   },
   {
-    url: "/images/hospital-bills.jpg",
+    url: "/images/hospital-needs.png",
     alt: "Urgent Hospital Bills",
     text: "For Urgent Hospital Bills",
   },
@@ -24,7 +24,7 @@ const carouselItems = [
     text: "For Education Funds",
   },
   {
-    url: "/images/travel-vacation.jpg",
+    url: "/images/vacation-needs.png",
     alt: "Travel and Vacation",
     text: "For Travel & Vacation",
   },
@@ -45,6 +45,13 @@ export default function WhyChooseUsCarousel() {
     setCurrentIndex(newIndex);
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      goToNext();
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [currentIndex]); // Re-run effect if currentIndex changes to reset the timer
   return (
     <div className="relative w-full max-w-lg mx-auto">
       <div className="overflow-hidden rounded-lg shadow-lg">
@@ -53,15 +60,18 @@ export default function WhyChooseUsCarousel() {
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {carouselItems.map((item, index) => (
-            <div key={index} className="w-full flex-shrink-0 relative group">
+            <div key={index} className="w-full flex-shrink-0 relative group aspect-video">
               <Image
                 src={item.url}
                 alt={item.alt}
-                width={500}
-                height={300}
-                className="w-full h-auto object-cover"
+                fill
+                sizes="(max-width: 640px) 100vw, 640px"
+                className="object-cover"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {/* Overlay for the background effect */}
+              <div className="absolute inset-0 bg-[#1e40af] opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+              {/* Text that pops up */}
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white text-xl font-bold text-center px-4">{item.text}</p>
               </div>
             </div>
